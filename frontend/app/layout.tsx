@@ -9,6 +9,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link rel="icon" href="/identidade_visual/05_favicon.svg" />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

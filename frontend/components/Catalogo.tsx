@@ -21,7 +21,7 @@ export default function Catalogo({ definirAnimalSelecionado }: CatalogoProps) {
     }, [filtro]);
 
     return (
-        <section className="max-w-[1000px] mx-auto pt-[34px] px-5 pb-[56px]">
+        <section id="adocao" className="max-w-[1000px] mx-auto pt-[34px] px-5 pb-[56px] scroll-mt-20">
             <div className="flex flex-wrap items-center gap-2 mb-[22px] text-[#416757] text-sm font-semibold">
                 <span>Filtrar:</span>
                 {filtros.map((opcao) => (

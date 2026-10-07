@@ -62,9 +62,10 @@ export default function VisaoAnimal({ animalSelecionado, definirAnimalSelecionad
                     </div>
 
                     {animalSelecionado.status !== "Adotado" && (
-                        <button className="border-0 rounded-[8px] bg-[#20cb68] text-white p-[12px] w-full mt-4 text-sm font-semibold cursor-pointer" type="button">
+                        <a href="https://wa.link/koh8hj" target="_blank" rel="noopener noreferrer" className="border-0 rounded-[8px] bg-[#20cb68] text-white p-[12px] w-full mt-4 text-sm font-semibold cursor-pointer items-center flex" type="button">
+                            <img src="/icone_whatsapp.svg" alt="WhatsApp" className="w-5 h-5 mr-2"></img>
                             Entrar em contato pelo WhatsApp
-                        </button>
+                        </a>
                     )}
                 </div>
             </div>

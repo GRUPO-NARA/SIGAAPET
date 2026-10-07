@@ -1,6 +1,6 @@
 export default function Hero() {
     return (
-        <section className="bg-gradient-to-br from-[#194a37] to-[#1d4432] text-white min-h-[366px]">
+        <section id="quem-somos" className="bg-gradient-to-br from-[#194a37] to-[#1d4432] text-white min-h-[366px] mt-15 scroll-mt-20">
           <div className="max-w-[1000px] mx-auto py-[66px] px-5">
             <p className="text-[#e9a52a] font-bold text-[10px] tracking-[1.7px] mb-[13px]">
               INICIATIVA DE PROTEÇÃO ANIMAL
