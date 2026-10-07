@@ -21,8 +21,12 @@ export default function Adicionar({ setAbaAtiva }: AdicionarProps) {
             especie: especieAnimal,
             status: "Disponível",
             localizacao: localAnimal,
-            imagem: fotoPreview || "https://images.unsplash.com/photo-1543466835-00a7907e9de1"
+            imagem: fotoPreview || "https://images.unsplash.com/photo-1543466835-00a7907e9de1",
+            descricao: descricaoAnimal,
+            idade: "Não informada",
+            cor: "Não informada"
         };
+
         setAnimaisLista([novo, ...animaisLista]);
         alert("Animal cadastrado com sucesso!");
         setNomeAnimal("");
@@ -63,11 +67,11 @@ export default function Adicionar({ setAbaAtiva }: AdicionarProps) {
                         <label className="block text-xs font-semibold text-[#355b49] mb-1">Espécie</label>
                         <select
                             value={especieAnimal}
-                            onChange={(e) => setEspecieAnimal(e.target.value)}
+                            onChange={(e) => setEspecieAnimal(e.target.value as "Cachorro" | "Gato")} // <-- Ajuste aqui
                             className="w-full p-2.5 rounded-[8px] border border-[#e9e2d7] bg-[#f8f5ef] text-sm focus:outline-none focus:border-[#123e2f]"
                         >
-                            <option>Cachorro</option>
-                            <option>Gato</option>
+                            <option value="Cachorro">Cachorro</option>
+                            <option value="Gato">Gato</option>
                         </select>
                     </div>
                 </div>
